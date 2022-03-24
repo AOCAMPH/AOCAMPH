@@ -1,29 +1,24 @@
-<testsuite failures="0"
+<testsuite failures="1"
            name="src/test/java/parkingApp/feature/logOn.feature"
            skipped="0"
            tests="1"
-           time="1.766803">
+           time="0.004876">
    <testcase classname="src.test.java.parkingApp.feature.logOn"
-             name="Validar que el usuario que inicia sesion sea el mismo que ingresa al aplicativo"
-             time="1.766803">
-      <system-out>Given url 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
-When request .............................................................. passed
-And method Post ........................................................... passed
-Then status 200 ........................................................... passed
-* def email_password_info = response.email ................................ passed
-* def idToken = response.idToken .......................................... passed
-Given url 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
-When request {"idToken": #(idToken)} ...................................... passed
-And method Post ........................................................... passed
-Then status 200 ........................................................... passed
-* def email_account_info = response.users[0].email ........................ passed
-And match email_password_info == email_account_info ....................... passed
-Given url 'http://192.168.18.5:8080/' ..................................... passed
-And path 'usuario/save' ................................................... passed
-And request ............................................................... passed
-When method POST .......................................................... passed
-Then status 200 ........................................................... passed
-* def contadorVehiculos = $.vehiculos.length() ............................ passed
-* def usuario = response.id ............................................... passed</system-out>
+             name="Login succesfully into ParkingApp"
+             time="0.004876">
+      <failure message="-unknown-:6 - javascript evaluation failed: apiGetAccountInfoUrl, ReferenceError: &#34;apiGetAccountInfoUrl&#34; is not defined in &lt;eval&gt; at line number 1">* url apiGoogleUrl ........................................................ passed
+* url apiUrl .............................................................. passed
+* url apiGetAccountInfoUrl ................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:6 - javascript evaluation failed: apiGetAccountInfoUrl, ReferenceError: "apiGetAccountInfoUrl" is not defined in &lt;eval&gt; at line number 1&#xD;
+	at ✽.* url apiGetAccountInfoUrl (-unknown-:6)&#xD;
+
+When request .............................................................. skipped
+And method Post ........................................................... skipped
+Then status 200 ........................................................... skipped
+* def token = response.idToken ............................................ skipped
+* def refreshToken = response.refreshToken ................................ skipped
+And match token != refreshToken ........................................... skipped</failure>
    </testcase>
 </testsuite>

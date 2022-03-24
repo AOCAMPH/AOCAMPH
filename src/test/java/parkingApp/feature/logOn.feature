@@ -1,7 +1,8 @@
 Feature: log on
 
+
   Scenario Outline: Login with bad credentials
-    Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ'
+    Given url apiGoogleUrl
     When request
     """
         {
@@ -25,7 +26,7 @@ Feature: log on
       | fmijares@mailinator.com | 111111111111111111 | L                 | Invalid value at 'return_secure_token' (TYPE_BOOL), \"$\"    |
 
   Scenario Outline: Login with bad credentials from a csv
-    Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ'
+    Given url apiGoogleUrl
     When request
     """
         {
@@ -42,7 +43,7 @@ Feature: log on
       | read(_dataCSV + 'dataLogin.csv') |
 
   Scenario: Login succesfully into ParkingApp
-    Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ'
+    Given url apiGoogleUrl
     When request
     """
         {
@@ -59,7 +60,7 @@ Feature: log on
 
     @postLogin
   Scenario: Validar que el usuario que inicia sesion sea el mismo que ingresa al aplicativo
-    Given url 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ'
+    Given url apiGoogleUrl
     When request
     """
       {
@@ -73,14 +74,14 @@ Feature: log on
     * def email_password_info = response.email
     * def idToken = response.idToken
 
-    Given url 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ'
+    Given url apiGetAccountInfoUrl
     When request {"idToken": #(idToken)}
     And method Post
     Then status 200
     * def email_account_info = response.users[0].email
     And match email_password_info == email_account_info
 
-    Given url 'http://192.168.18.5:8080/'
+    Given url apiUrl
     And path 'usuario/save'
     And request
     """
