@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: parkingApp/feature/autorizacionVehicular.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Parking Application</td>
+      <td>12 Mar 2022, 10:36</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">parkingApp/feature/autorizacionVehicular.feature</td>
+          <td      class="passed"    >32</td>
+          <td      class="failed"    >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">33</td>
+
+          <td  class="passed"    >4</td>
+          <td  class="failed"    >1</td>
+          <td class="total">5</td>
+
+          <td class="duration" data-value="977856100">0.977</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">parkingApp/feature/autorizacionVehicular.feature</span>
+
+
+</div>
+
+        <div class="description indention">Autorizaciones</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>10:35:50.576 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.727</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">consultar autorizaciones</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'autorizacion_salida/consultaPorDni'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;dni&quot;:&quot;12345678&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.712</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>10:35:51.405 request:
+1 &gt; POST http://192.168.18.5:8080/autorizacion_salida/consultaPorDni
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 18
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 192.168.18.5:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+{&quot;dni&quot;:&quot;12345678&quot;}
+
+10:35:51.465 response time in milliseconds: 57.30
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Sat, 12 Mar 2022 15:35:51 GMT
+1 &lt; Transfer-Encoding: chunked
+[{&quot;autorizacion&quot;:{&quot;id&quot;:123,&quot;dni&quot;:&quot;12345678&quot;,&quot;fecha&quot;:&quot;2022-02-07T21:50:17.000+0000&quot;,&quot;playa&quot;:null,&quot;nombres&quot;:&quot;Alex Perez Caceres&quot;,&quot;direccion&quot;:&quot;La comarca&quot;,&quot;telefono&quot;:&quot;999999992&quot;,&quot;brevete&quot;:&quot;NB7171737&quot;,&quot;tpropiedad&quot;:&quot;TP7262737&quot;,&quot;marca&quot;:&quot;AUDI&quot;,&quot;modelo&quot;:&quot;A3&quot;,&quot;placa&quot;:&quot;A4M-352&quot;,&quot;color&quot;:&quot;VERDE&quot;,&quot;ano&quot;:&quot;2020&quot;,&quot;fsalida&quot;:null,&quot;hsalida&quot;:&quot;22:21&quot;,&quot;firma&quot;:&quot;1644288617211.png&quot;,&quot;idUsuario&quot;:32},&quot;imagen&quot;:&quot;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&quot;},{&quot;autorizacion&quot;:{&quot;id&quot;:120,&quot;dni&quot;:&quot;12345678&quot;,&quot;fecha&quot;:&quot;2020-09-16T22:25:39.000+0000&quot;,&quot;playa&quot;:&quot;01&quot;,&quot;nombres&quot;:&quot;Alex Perez Caceres&quot;,&quot;direccion&quot;:&quot;La comarca&quot;,&quot;telefono&quot;:&quot;999999999&quot;,&quot;brevete&quot;:&quot;NB7171737&quot;,&quot;tpropiedad&quot;:&quot;TP7262737&quot;,&quot;marca&quot;:&quot;AUDI&quot;,&quot;modelo&quot;:&quot;A3&quot;,&quot;placa&quot;:&quot;A4M-352&quot;,&quot;color&quot;:&quot;VERDE&quot;,&quot;ano&quot;:&quot;2020&quot;,&quot;fsalida&quot;:null,&quot;hsalida&quot;:&quot;22:21&quot;,&quot;firma&quot;:&quot;1600313138977.png&quot;,&quot;idUsuario&quot;:32},&quot;imagen&quot;:&quot;&quot;},{&quot;autorizacion&quot;:{&quot;id&quot;:27,&quot;dni&quot;:&quot;12345678&quot;,&quot;fecha&quot;:&quot;2020-04-14T17:39:40.000+0000&quot;,&quot;playa&quot;:&quot;01&quot;,&quot;nombres&quot;:&quot;a&quot;,&quot;direccion&quot;:&quot;b&quot;,&quot;telefono&quot;:&quot;123456789&quot;,&quot;brevete&quot;:&quot;t12345678&quot;,&quot;tpropiedad&quot;:&quot;b12345678&quot;,&quot;marca&quot;:&quot;AUDI&quot;,&quot;modelo&quot;:&quot;AUDI A5&quot;,&quot;placa&quot;:&quot;&quot;,&quot;color&quot;:&quot;CELESTE&quot;,&quot;ano&quot;:&quot;2020&quot;,&quot;fsalida&quot;:null,&quot;hsalida&quot;:null,&quot;firma&quot;:&quot;1586903980856.png&quot;,&quot;idUsuario&quot;:6},&quot;imagen&quot;:&quot;&quot;}]</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $.length() == 3</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>10:35:51.494 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.017</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">realizar autorizacion</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>{
+  &quot;dni&quot;:&quot;08974688&quot;,
+  &quot;nombres&quot;:&quot;EMILIA LA RATA&quot;,
+  &quot;direccion&quot;:&quot;EN LAS CLOACAS&quot;,
+  &quot;telefono&quot;:&quot;987456123&quot;,
+  &quot;brevete&quot;:&quot;NB1021291&quot;,
+  &quot;tpropiedad&quot;:&quot;TP2323232&quot;,
+  &quot;marca&quot;:&quot;AUDI&quot;,
+  &quot;modelo&quot;:&quot;A3&quot;,
+  &quot;placa&quot;:&quot;NP1-000&quot;,
+  &quot;color&quot;:&quot;AZUL&quot;,
+  &quot;ano&quot;:&quot;2017&quot;,
+  &quot;hsalida&quot;:&quot;14:41&quot;,
+  &quot;firma&quot;:&quot;1645299767714.png&quot;,
+  &quot;playa&quot;:5,
+  &quot;idUsuario&quot;:32
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>10:35:51.497 request:
+1 &gt; POST http://192.168.18.5:8080/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 290
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 192.168.18.5:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+{&quot;dni&quot;:&quot;08974688&quot;,&quot;nombres&quot;:&quot;EMILIA LA RATA&quot;,&quot;direccion&quot;:&quot;EN LAS CLOACAS&quot;,&quot;telefono&quot;:&quot;987456123&quot;,&quot;brevete&quot;:&quot;NB1021291&quot;,&quot;tpropiedad&quot;:&quot;TP2323232&quot;,&quot;marca&quot;:&quot;AUDI&quot;,&quot;modelo&quot;:&quot;A3&quot;,&quot;placa&quot;:&quot;NP1-000&quot;,&quot;color&quot;:&quot;AZUL&quot;,&quot;ano&quot;:&quot;2017&quot;,&quot;hsalida&quot;:&quot;14:41&quot;,&quot;firma&quot;:&quot;1645299767714.png&quot;,&quot;playa&quot;:5,&quot;idUsuario&quot;:32}
+
+10:35:51.510 response time in milliseconds: 12.79
+1 &lt; 404
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Sat, 12 Mar 2022 15:35:51 GMT
+1 &lt; Transfer-Encoding: chunked
+{&quot;timestamp&quot;:&quot;2022-03-12T15:35:51.508+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;path&quot;:&quot;/&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>com.intuit.karate.exception.KarateException:</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: autorizacionVehicular.feature:35 - status code was: 404, expected: 200, response time: 13, url: http://192.168.18.5:8080/, response: {&quot;path&quot;:&quot;/&quot;,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;timestamp&quot;:&quot;2022-03-12T15:35:51.508+0000&quot;,&quot;status&quot;:404}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>10:35:51.512 status code was: 404, expected: 200, response time: 13, url: http://192.168.18.5:8080/, response: {&quot;path&quot;:&quot;/&quot;,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;timestamp&quot;:&quot;2022-03-12T15:35:51.508+0000&quot;,&quot;status&quot;:404}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>10:35:51.526 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.025</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">realizar autorizacion con errores</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'autorizacion_salida/save'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {  }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>10:35:51.533 request:
+1 &gt; POST http://192.168.18.5:8080/autorizacion_salida/save
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 192.168.18.5:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+{}
+
+10:35:51.547 response time in milliseconds: 12.91
+1 &lt; 500
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Sat, 12 Mar 2022 15:35:51 GMT
+1 &lt; Transfer-Encoding: chunked
+{&quot;timestamp&quot;:&quot;2022-03-12T15:35:51.543+0000&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;\r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id_usuario' cannot be null\r\n### The error may involve com.parking.app.dao.IAutorizacionDAO.save-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO t_autorizacion VALUES (NULL, NOW(), ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id_usuario' cannot be null\n; Column 'id_usuario' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'id_usuario' cannot be null&quot;,&quot;path&quot;:&quot;/autorizacion_salida/save&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 500</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.error == &quot;Internal Server Error&quot;</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>10:35:51.562 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.019</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">validar schema del response</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'autorizacion_salida/save'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>{
+  &quot;dni&quot;:&quot;08974688&quot;,
+  &quot;nombres&quot;:&quot;EMILIA LA RATA&quot;,
+  &quot;direccion&quot;:&quot;EN LAS CLOACAS&quot;,
+  &quot;telefono&quot;:&quot;987456123&quot;,
+  &quot;brevete&quot;:&quot;NB1021291&quot;,
+  &quot;tpropiedad&quot;:&quot;TP2323232&quot;,
+  &quot;marca&quot;:&quot;AUDI&quot;,
+  &quot;modelo&quot;:&quot;A3&quot;,
+  &quot;placa&quot;:&quot;NP1-000&quot;,
+  &quot;color&quot;:&quot;AZUL&quot;,
+  &quot;ano&quot;:&quot;2017&quot;,
+  &quot;hsalida&quot;:&quot;14:41&quot;,
+  &quot;firma&quot;:&quot;1645299767714.png&quot;,
+  &quot;playa&quot;:5,
+  &quot;idUsuario&quot;:32
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>10:35:51.564 request:
+1 &gt; POST http://192.168.18.5:8080/autorizacion_salida/save
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 290
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 192.168.18.5:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+{&quot;dni&quot;:&quot;08974688&quot;,&quot;nombres&quot;:&quot;EMILIA LA RATA&quot;,&quot;direccion&quot;:&quot;EN LAS CLOACAS&quot;,&quot;telefono&quot;:&quot;987456123&quot;,&quot;brevete&quot;:&quot;NB1021291&quot;,&quot;tpropiedad&quot;:&quot;TP2323232&quot;,&quot;marca&quot;:&quot;AUDI&quot;,&quot;modelo&quot;:&quot;A3&quot;,&quot;placa&quot;:&quot;NP1-000&quot;,&quot;color&quot;:&quot;AZUL&quot;,&quot;ano&quot;:&quot;2017&quot;,&quot;hsalida&quot;:&quot;14:41&quot;,&quot;firma&quot;:&quot;1645299767714.png&quot;,&quot;playa&quot;:5,&quot;idUsuario&quot;:32}
+
+10:35:51.579 response time in milliseconds: 14.33
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Sat, 12 Mar 2022 15:35:51 GMT
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:null,&quot;dni&quot;:&quot;08974688&quot;,&quot;fecha&quot;:null,&quot;playa&quot;:&quot;5&quot;,&quot;nombres&quot;:&quot;EMILIA LA RATA&quot;,&quot;direccion&quot;:&quot;EN LAS CLOACAS&quot;,&quot;telefono&quot;:&quot;987456123&quot;,&quot;brevete&quot;:&quot;NB1021291&quot;,&quot;tpropiedad&quot;:&quot;TP2323232&quot;,&quot;marca&quot;:&quot;AUDI&quot;,&quot;modelo&quot;:&quot;A3&quot;,&quot;placa&quot;:&quot;NP1-000&quot;,&quot;color&quot;:&quot;AZUL&quot;,&quot;ano&quot;:&quot;2017&quot;,&quot;fsalida&quot;:null,&quot;hsalida&quot;:&quot;14:41&quot;,&quot;firma&quot;:&quot;1645299767714.png&quot;,&quot;idUsuario&quot;:32}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response ==</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: &quot;##number&quot;,
+  &quot;dni&quot;: &quot;#string&quot;,
+  &quot;fecha&quot;: &quot;##string&quot;,
+  &quot;playa&quot;: &quot;#string&quot;,
+  &quot;nombres&quot;: &quot;#string&quot;,
+  &quot;direccion&quot;: &quot;#string&quot;,
+  &quot;telefono&quot;: &quot;#string&quot;,
+  &quot;brevete&quot;: &quot;#string&quot;,
+  &quot;tpropiedad&quot;: &quot;#string&quot;,
+  &quot;marca&quot;: &quot;#string&quot;,
+  &quot;modelo&quot;: &quot;#string&quot;,
+  &quot;placa&quot;: &quot;#string&quot;,
+  &quot;color&quot;: &quot;#string&quot;,
+  &quot;ano&quot;: &quot;#string&quot;,
+  &quot;fsalida&quot;: &quot;##string&quot;,
+  &quot;hsalida&quot;: &quot;#string&quot;,
+  &quot;firma&quot;: &quot;##string&quot;,
+  &quot;idUsuario&quot;: &quot;#number&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-30">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-30" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-31" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>10:35:51.593 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.187</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">grabar la firma de la autorizacion</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'autorizacion_salida/image'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;imagen&quot;:&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAKbCAYAAAAOrsqaAAAAAXNSR0IArs4c6QAAIABJREFUeF7t3QnUNEV97/FfaVyDS1SMwQ3jEq8LCEq8CV6U4HI8ohAXXHC5KBKNSxQxGreERHHB/apJVEQTrgtGDaIcRGOMKF4VIwgaDSoCKsaAaxDiVvf8qX5k3n66Z3pm/jPzn5pvn/Me8X1naqo+/35+T093dXUSGwIIIIBAdQKpuhExIAQQQAABEe7sBAgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7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&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.122</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>10:35:51.623 request:
+1 &gt; POST http://192.168.18.5:8080/autorizacion_salida/image
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 19515
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: 192.168.18.5:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+{&quot;imagen&quot;:&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAKbCAYAAAAOrsqaAAAAAXNSR0IArs4c6QAAIABJREFUeF7t3QnUNEV97/FfaVyDS1SMwQ3jEq8LCEq8CV6U4HI8ohAXXHC5KBKNSxQxGreERHHB/apJVEQTrgtGDaIcRGOMKF4VIwgaDSoCKsaAaxDiVvf8qX5k3n66Z3pm/jPzn5pvn/Me8X1naqo+/35+T093dXUSGwIIIIBAdQKpuhExIAQQQAABEe7sBAgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7hUVlSAgggADhzj6AAAIIVChAuFdYVIaEAAIIEO7sAwgggECFAoR7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&quot;}
+
+10:35:51.724 response time in milliseconds: 98.61
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Sat, 12 Mar 2022 15:35:51 GMT
+1 &lt; Transfer-Encoding: chunked
+{&quot;image&quot;:&quot;1647099351712.png&quot;,&quot;message&quot;:&quot;success&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;success&quot;</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def imagen = response.image</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'autorizacion_salida/save'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>{
+   &quot;dni&quot;:&quot;02211678&quot;,
+   &quot;nombres&quot;:&quot;OLVIA LA PRIMA DE EMILIA&quot;,
+   &quot;direccion&quot;:&quot;JR. ZEPITA 293 AL COSTADO DE LAS CHAMAS&quot;,
+   &quot;telefono&quot;:&quot;977272120&quot;,
+   &quot;brevete&quot;:&quot;NB02211678&quot;,
+   &quot;tpropiedad&quot;:&quot;TP02211678&quot;,
+   &quot;marca&quot;:&quot;AUDI&quot;,
+   &quot;modelo&quot;:&quot;A3&quot;,
+   &quot;placa&quot;:&quot;NP1-000&quot;,
+   &quot;color&quot;:&quot;AZUL&quot;,
+   &quot;ano&quot;:&quot;2017&quot;,
+   &quot;hsalida&quot;:&quot;14:41&quot;,
+   &quot;firma&quot;:&quot;#(imagen)&quot;,
+   &quot;playa&quot;:5,
+   &quot;idUsuario&quot;:32
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>10:35:51.789 request:
+2 &gt; POST http://192.168.18.5:8080/autorizacion_salida/save
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 327
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: 192.168.18.5:8080
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_231)
+{&quot;dni&quot;:&quot;02211678&quot;,&quot;nombres&quot;:&quot;OLVIA LA PRIMA DE EMILIA&quot;,&quot;direccion&quot;:&quot;JR. ZEPITA 293 AL COSTADO DE LAS CHAMAS&quot;,&quot;telefono&quot;:&quot;977272120&quot;,&quot;brevete&quot;:&quot;NB02211678&quot;,&quot;tpropiedad&quot;:&quot;TP02211678&quot;,&quot;marca&quot;:&quot;AUDI&quot;,&quot;modelo&quot;:&quot;A3&quot;,&quot;placa&quot;:&quot;NP1-000&quot;,&quot;color&quot;:&quot;AZUL&quot;,&quot;ano&quot;:&quot;2017&quot;,&quot;hsalida&quot;:&quot;14:41&quot;,&quot;firma&quot;:&quot;1647099351712.png&quot;,&quot;playa&quot;:5,&quot;idUsuario&quot;:32}
+
+10:35:51.800 response time in milliseconds: 8.46
+2 &lt; 200
+2 &lt; Content-Type: application/json;charset=UTF-8
+2 &lt; Date: Sat, 12 Mar 2022 15:35:51 GMT
+2 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:null,&quot;dni&quot;:&quot;02211678&quot;,&quot;fecha&quot;:null,&quot;playa&quot;:&quot;5&quot;,&quot;nombres&quot;:&quot;OLVIA LA PRIMA DE EMILIA&quot;,&quot;direccion&quot;:&quot;JR. ZEPITA 293 AL COSTADO DE LAS CHAMAS&quot;,&quot;telefono&quot;:&quot;977272120&quot;,&quot;brevete&quot;:&quot;NB02211678&quot;,&quot;tpropiedad&quot;:&quot;TP02211678&quot;,&quot;marca&quot;:&quot;AUDI&quot;,&quot;modelo&quot;:&quot;A3&quot;,&quot;placa&quot;:&quot;NP1-000&quot;,&quot;color&quot;:&quot;AZUL&quot;,&quot;ano&quot;:&quot;2017&quot;,&quot;fsalida&quot;:null,&quot;hsalida&quot;:&quot;14:41&quot;,&quot;firma&quot;:&quot;1647099351712.png&quot;,&quot;idUsuario&quot;:32}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

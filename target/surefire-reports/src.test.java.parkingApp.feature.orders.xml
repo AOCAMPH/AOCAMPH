@@ -1,0 +1,14 @@
+<testsuite failures="0"
+           name="src/test/java/parkingApp/feature/orders.feature"
+           skipped="0"
+           tests="1"
+           time="1.407028">
+   <testcase classname="src.test.java.parkingApp.feature.orders"
+             name="list an existing order"
+             time="1.407028">
+      <system-out>* url apiPetUrl ........................................................... passed
+And path 'store/order/9223372000666159641' ................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+</testsuite>

@@ -1,0 +1,16 @@
+<testsuite failures="0"
+           name="src/test/java/parkingApp/feature/reservas.feature"
+           skipped="0"
+           tests="1"
+           time="0.78983">
+   <testcase classname="src.test.java.parkingApp.feature.reservas"
+             name="Listar reservas de un cliente con reservas canceladas de un usuario"
+             time="0.78983">
+      <system-out>Given url apiUrl .......................................................... passed
+And path '/reserva/getReservasByUser' ..................................... passed
+And params {idUsuario: 4} ................................................. passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def idReserva = response[0].id .......................................... passed</system-out>
+   </testcase>
+</testsuite>

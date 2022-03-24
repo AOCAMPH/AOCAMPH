@@ -1,0 +1,18 @@
+<testsuite failures="0"
+           name="src/test/java/parkingApp/feature/playas.feature"
+           skipped="0"
+           tests="1"
+           time="0.616644">
+   <testcase classname="src.test.java.parkingApp.feature.playas"
+             name="Obtener datos de la playa segun su localizacion"
+             time="0.616644">
+      <system-out>* url apiUrl .............................................................. passed
+And param latitud = -12.111062 ............................................ passed
+And param longitud = -77.0315913 .......................................... passed
+And param distancia = 2 ................................................... passed
+Given path '/playa/getCercanos' ........................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response[0].nombre == "#string" ................................. passed</system-out>
+   </testcase>
+</testsuite>

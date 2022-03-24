@@ -1,0 +1,29 @@
+<testsuite failures="0"
+           name="src/test/java/parkingApp/feature/logOn.feature"
+           skipped="0"
+           tests="1"
+           time="1.766803">
+   <testcase classname="src.test.java.parkingApp.feature.logOn"
+             name="Validar que el usuario que inicia sesion sea el mismo que ingresa al aplicativo"
+             time="1.766803">
+      <system-out>Given url 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 200 ........................................................... passed
+* def email_password_info = response.email ................................ passed
+* def idToken = response.idToken .......................................... passed
+Given url 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request {"idToken": #(idToken)} ...................................... passed
+And method Post ........................................................... passed
+Then status 200 ........................................................... passed
+* def email_account_info = response.users[0].email ........................ passed
+And match email_password_info == email_account_info ....................... passed
+Given url 'http://192.168.18.5:8080/' ..................................... passed
+And path 'usuario/save' ................................................... passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* def contadorVehiculos = $.vehiculos.length() ............................ passed
+* def usuario = response.id ............................................... passed</system-out>
+   </testcase>
+</testsuite>

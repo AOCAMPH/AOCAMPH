@@ -1,0 +1,21 @@
+
+{
+  "id": "##number",
+  "dni": "#string",
+  "fecha": "#? timeValidator(_)",
+  "playa": "#string",
+  "nombres": "#string",
+  "direccion": "#string",
+  "telefono": "#string",
+  "brevete": "#string",
+  "tpropiedad": "#string",
+  "marca": "#string",
+  "modelo": "#string",
+  "placa": "#string",
+  "color": "#string",
+  "ano": "#string",
+  "fsalida": "##string",
+  "hsalida": "#string",
+  "firma": "##string",
+  "idUsuario": "#number"
+}

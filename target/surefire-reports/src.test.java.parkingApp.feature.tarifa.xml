@@ -1,0 +1,17 @@
+<testsuite failures="0"
+           name="src/test/java/parkingApp/feature/tarifa.feature"
+           skipped="0"
+           tests="1"
+           time="1.040488">
+   <testcase classname="src.test.java.parkingApp.feature.tarifa"
+             name="actualizar precio de playas"
+             time="1.040488">
+      <system-out>Given url apiUrl .......................................................... passed
+* def actualizaTarifa = read(_request + 'tarifaRequest.json') ............. passed
+Given path 'tarifa/updateTarifaPorProbabilidad' ........................... passed
+And request actualizaTarifa ............................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And assert responseType == 'json' ......................................... passed</system-out>
+   </testcase>
+</testsuite>

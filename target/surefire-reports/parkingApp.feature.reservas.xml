@@ -1,0 +1,40 @@
+<testsuite failures="1"
+           name="parkingApp/feature/reservas.feature"
+           skipped="0"
+           tests="2"
+           time="0.053059">
+   <testcase classname="parkingApp.feature.reservas"
+             name="Listar reservas de un cliente"
+             time="0.013519">
+      <failure message="reservas.feature:12 - status code was: 400, expected: 200, response time: 7, url: http://192.168.18.5:8080/reserva/getReservasByUser?idUsuario=%23%28idUsuarioAux%29, response: {&#34;path&#34;:&#34;/reserva/getReservasByUser&#34;,&#34;error&#34;:&#34;Bad Request&#34;,&#34;message&#34;:&#34;Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \&#34;(idUsuarioAux)\&#34;&#34;,&#34;timestamp&#34;:&#34;2022-03-12T15:36:14.663+0000&#34;,&#34;status&#34;:400}">Given url apiUrl .......................................................... passed
+* def idUsuario = {idUsuario: #(idUsuarioAux)} ............................ passed
+And path '/reserva/getReservasByUser' ..................................... passed
+And params idUsuario ...................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: reservas.feature:12 - status code was: 400, expected: 200, response time: 7, url: http://192.168.18.5:8080/reserva/getReservasByUser?idUsuario=%23%28idUsuarioAux%29, response: {"path":"/reserva/getReservasByUser","error":"Bad Request","message":"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"(idUsuarioAux)\"","timestamp":"2022-03-12T15:36:14.663+0000","status":400}&#xD;
+	at ✽.Then status 200 (reservas.feature:12)</failure>
+   </testcase>
+   <testcase classname="parkingApp.feature.reservas"
+             name="Listar reservas de un cliente con reservas canceladas de un usuario"
+             time="0.03954">
+      <system-out>Given url apiUrl .......................................................... passed
+* def idUsuario = {idUsuario: #(idUsuarioAux)} ............................ passed
+And path '/reserva/getReservasByUser' ..................................... passed
+And params idUsuario ...................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: reservas.feature:12 - status code was: 400, expected: 200, response time: 7, url: http://192.168.18.5:8080/reserva/getReservasByUser?idUsuario=%23%28idUsuarioAux%29, response: {"path":"/reserva/getReservasByUser","error":"Bad Request","message":"Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"(idUsuarioAux)\"","timestamp":"2022-03-12T15:36:14.663+0000","status":400}&#xD;
+	at ✽.Then status 200 (reservas.feature:12)&#xD;
+
+Given url apiUrl .......................................................... passed
+And path '/reserva/getReservasByUser' ..................................... passed
+And params {idUsuario: 5} ................................................. passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+</testsuite>

@@ -1,0 +1,15 @@
+<testsuite failures="0"
+           name="src/test/java/parkingApp/feature/users.feature"
+           skipped="0"
+           tests="1"
+           time="4.965709">
+   <testcase classname="src.test.java.parkingApp.feature.users"
+             name="create user with an array"
+             time="4.965709">
+      <system-out>* url apiPetUrl ........................................................... passed
+Given path 'user/createWithArray' ......................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+</testsuite>

@@ -1,0 +1,30 @@
+<testsuite failures="0"
+           name="parkingApp/feature/playas.feature"
+           skipped="0"
+           tests="2"
+           time="0.075945">
+   <testcase classname="parkingApp.feature.playas"
+             name="Obtener datos de la playa segun su localizacion"
+             time="0.034716">
+      <system-out>* url apiUrl .............................................................. passed
+Given params { latitud:-12.111062 , longitud: -77.0315913 , distancia: 2 } . passed
+Given path '/playa/getCercanos' ........................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.playas"
+             name="Obtener las playas"
+             time="0.041229">
+      <system-out>* url apiUrl .............................................................. passed
+Given params { latitud:-12.111062 , longitud: -77.0315913 , distancia: 2 } . passed
+Given path '/playa/getCercanos' ........................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* url apiUrl .............................................................. passed
+Given path 'playa/getPlayas' .............................................. passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match each response == ................................................ passed
+And match response[*].nombre contains any "Playa 11" ...................... passed</system-out>
+   </testcase>
+</testsuite>

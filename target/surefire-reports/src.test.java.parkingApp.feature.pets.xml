@@ -1,0 +1,21 @@
+<testsuite failures="0"
+           name="src/test/java/parkingApp/feature/pets.feature"
+           skipped="0"
+           tests="1"
+           time="2.018558">
+   <testcase classname="src.test.java.parkingApp.feature.pets"
+             name="add and delete a pet"
+             time="2.018558">
+      <system-out>* url 'https://petstore.swagger.io/v2/' ................................... passed
+* def petRequest = read('classpath:parkingApp/json/request/petRequest.json') . passed
+Given path 'pet' .......................................................... passed
+And request ............................................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def petId = response.id ................................................. passed
+* print "El valor del petid es:" + " " + petId ............................ passed
+And path 'pet/', petId .................................................... passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+</testsuite>

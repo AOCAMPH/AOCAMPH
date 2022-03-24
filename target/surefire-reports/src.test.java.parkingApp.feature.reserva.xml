@@ -1,0 +1,33 @@
+<testsuite failures="0"
+           name="src/test/java/parkingApp/feature/reserva.feature"
+           skipped="0"
+           tests="1"
+           time="7.231657">
+   <testcase classname="src.test.java.parkingApp.feature.reserva"
+             name="Realizar una reseva y reasignarla a otro vehiculo"
+             time="7.231657">
+      <system-out>* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read(_request + 'reservaRequest.json') ....... passed
+* def responseBody = read(_response + 'responseReserve.json') ............. passed
+* def timeValidator = read('classpath:helpers/timeValidator.js') .......... passed
+* def dataGenerator = Java.type(_helpers+ 'DataGenerator') ................ passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def idUsuarioAux = response.idUsuario ................................... passed
+* def getReserveFeature = call read('reservas.feature@getListadoReservasIdVariable') . passed
+* def idReserva = getReserveFeature.response[0].id ........................ passed
+* def idVehiculo = dataGenerator.getRandomIdVehiculo() .................... passed
+And path '/reserva/updateReserva', idReserva .............................. passed
+And request requestGeneratedBody .......................................... passed
+And set requestGeneratedBody.idVehiculo = idVehiculo ...................... passed
+When method Put ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+</testsuite>

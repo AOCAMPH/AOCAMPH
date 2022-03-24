@@ -1,0 +1,278 @@
+<testsuite failures="0"
+           name="parkingApp/feature/logOn.feature"
+           skipped="0"
+           tests="9"
+           time="3.411865">
+   <testcase classname="parkingApp.feature.logOn"
+             name="Login with bad credentials"
+             time="0.58602">
+      <system-out>Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_PASSWORD" .................... passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.logOn"
+             name="Login with bad credentials"
+             time="0.304495">
+      <system-out>Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.logOn"
+             name="Login with bad credentials"
+             time="0.298541">
+      <system-out>Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.logOn"
+             name="Login with bad credentials"
+             time="0.276299">
+      <system-out>Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "MISSING_PASSWORD" .................... passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.logOn"
+             name="Login with bad credentials"
+             time="0.281018">
+      <system-out>Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "MISSING_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_EMAIL" ....................... passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.logOn"
+             name="Login with bad credentials"
+             time="0.290738">
+      <system-out>Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "MISSING_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_EMAIL" ....................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "Invalid value at 'return_secure_token' (TYPE_BOOL), 0" . passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.logOn"
+             name="Login with bad credentials"
+             time="0.295263">
+      <system-out>Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "MISSING_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_EMAIL" ....................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "Invalid value at 'return_secure_token' (TYPE_BOOL), 0" . passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "Invalid value at 'return_secure_token' (TYPE_BOOL), \"$\"" . passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.logOn"
+             name="Login succesfully into ParkingApp"
+             time="0.444782">
+      <system-out>Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "MISSING_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_EMAIL" ....................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "Invalid value at 'return_secure_token' (TYPE_BOOL), 0" . passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "Invalid value at 'return_secure_token' (TYPE_BOOL), \"$\"" . passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 200 ........................................................... passed
+* def token = response.idToken ............................................ passed
+* def refreshToken = response.refreshToken ................................ passed
+And match token != refreshToken ........................................... passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.logOn"
+             name="Validar que el usuario que inicia sesion sea el mismo que ingresa al aplicativo"
+             time="0.63471">
+      <system-out>Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "EMAIL_NOT_FOUND" ..................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "MISSING_PASSWORD" .................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "INVALID_EMAIL" ....................... passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "Invalid value at 'return_secure_token' (TYPE_BOOL), 0" . passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 400 ........................................................... passed
+And match response.error.message == "Invalid value at 'return_secure_token' (TYPE_BOOL), \"$\"" . passed
+Given url  'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request .............................................................. passed
+And method Post ........................................................... passed
+Then status 200 ........................................................... passed
+* def token = response.idToken ............................................ passed
+* def refreshToken = response.refreshToken ................................ passed
+And match token != refreshToken ........................................... passed
+Given url 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request {"email": "fmijares@mailinator.com", "password": "111111111111111111", "returnSecureToken": true} . passed
+And method Post ........................................................... passed
+Then status 200 ........................................................... passed
+* def email_password_info = response.email ................................ passed
+* def idToken = response.idToken .......................................... passed
+Given url 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyC7xBnSXBOT44sr3mdV4Zu8aN1-TouM9vQ' . passed
+When request {"idToken": #(idToken)} ...................................... passed
+And method Post ........................................................... passed
+Then status 200 ........................................................... passed
+* def email_account_info = response.users[0].email ........................ passed
+And match email_password_info == email_account_info ....................... passed</system-out>
+   </testcase>
+</testsuite>

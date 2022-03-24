@@ -1,0 +1,8 @@
+email,password,returnSecureToken,message
+fmijares@mailinator.com,11111111111111111,true,"INVALID_PASSWORD"
+fmiares@mailinator.com,111111111111111111,true,"EMAIL_NOT_FOUND"
+fmiares@mailinator.com,111111111111111111,null,"EMAIL_NOT_FOUND"
+fmijares@mailinator.com,                 ,true,"MISSING_PASSWORD"
+                       ,111111111111111111,true,"INVALID_EMAIL"
+fmijares@mailinator.com,111111111111111111,0,"Invalid value at 'return_secure_token' (TYPE_BOOL), 0"
+fmijares@mailinator.com,111111111111111111,$,"Invalid value at 'return_secure_token' (TYPE_BOOL), \"L\""

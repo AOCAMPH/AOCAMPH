@@ -1,0 +1,200 @@
+<testsuite failures="0"
+           name="parkingApp/feature/reserva.feature"
+           skipped="0"
+           tests="4"
+           time="17.609262">
+   <testcase classname="parkingApp.feature.reserva"
+             name="realizar una reserva"
+             time="3.738584">
+      <system-out>* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def idUsuarioAux = response.idUsuario ................................... passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.reserva"
+             name="realizar una reserva y valido su schema"
+             time="2.739944">
+      <system-out>* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def idUsuarioAux = response.idUsuario ................................... passed
+* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response == read('classpath:parkingApp/json/responseReserve.json') . passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.reserva"
+             name="realizar una reserva y cancelarla"
+             time="5.567845">
+      <system-out>* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def idUsuarioAux = response.idUsuario ................................... passed
+* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response == read('classpath:parkingApp/json/responseReserve.json') . passed
+* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def idUsuarioAux = response.idUsuario ................................... passed
+* param idUsuario = idUsuarioAux .......................................... passed
+Given path '/reserva/getReservasByUser' ................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def idReservaAux = response[0].id ....................................... passed
+* param idreserva = idReservaAux .......................................... passed
+Given path '/reserva/cancelarReserva' ..................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And assert response.status_message == 'Se cancelo su reserva exitosamente' . passed</system-out>
+   </testcase>
+   <testcase classname="parkingApp.feature.reserva"
+             name="Make a reserve and then reasign it (Ref)"
+             time="5.562889">
+      <system-out>* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def idUsuarioAux = response.idUsuario ................................... passed
+* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response == read('classpath:parkingApp/json/responseReserve.json') . passed
+* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def idUsuarioAux = response.idUsuario ................................... passed
+* param idUsuario = idUsuarioAux .......................................... passed
+Given path '/reserva/getReservasByUser' ................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def idReservaAux = response[0].id ....................................... passed
+* param idreserva = idReservaAux .......................................... passed
+Given path '/reserva/cancelarReserva' ..................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And assert response.status_message == 'Se cancelo su reserva exitosamente' . passed
+* url apiUrl .............................................................. passed
+* def requestGeneratedBody = read('classpath:parkingApp/json/reservaRequest.json') . passed
+* def responseBody = read('classpath:parkingApp/json/responseReserve.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def generateReserveValues = dataGenerator.getDataReserve() .............. passed
+* set requestGeneratedBody.idPlaya = generateReserveValues.idPlaya ........ passed
+* set requestGeneratedBody.idUsuario = generateReserveValues.idUsuario .... passed
+* set requestGeneratedBody.fechaReserva = generateReserveValues.fechaReserva . passed
+* set requestGeneratedBody.precioReserva = generateReserveValues.precioReserva . passed
+* set requestGeneratedBody.idVehiculo = generateReserveValues.idVehiculo .. passed
+Given path 'reserva/saveReserva' .......................................... passed
+And request requestGeneratedBody .......................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def idUsuarioAux = response.idUsuario ................................... passed
+* def getReserveFeature = call read('classpath:parkingApp/feature/reservas.feature@getListadoReservasIdVariable')  {idusuario: idUsuarioAux} . passed
+* def idReserva = getReserveFeature.response[0].id ........................ passed
+* def idVehiculo = dataGenerator.getRandomIdVehiculo() .................... passed
+And path '/reserva/updateReserva', idReserva .............................. passed
+And request requestGeneratedBody .......................................... passed
+And set requestGeneratedBody.idVehiculo = idVehiculo ...................... passed
+When method Put ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+</testsuite>

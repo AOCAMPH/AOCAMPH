@@ -1,0 +1,25 @@
+16:56:32.726 karate.env system property was:  
+ailed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    apiUrl: 'http://192.168.18.5:8080/',
+    _request: 'classpath:parkingApp/json/',
+    _dataCSV: 'classpath:parkingApp/csv/
+  }
+
+  if (env == 'dev') {
+
+  }
+  if (env == 'qa') {
+
+  }
+
+
+  return config;
+}, <eval>:10:40 Missing close quote
+    _dataCSV: 'classpath:parkingApp/csv/
+                                        ^ in <eval> at line number 10 at column number 40
